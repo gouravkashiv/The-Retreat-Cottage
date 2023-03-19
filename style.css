@@ -16,7 +16,8 @@ body {
 .container {
     display: grid;
     grid-template-areas:
-        'navbar navbar';
+        'navbar'
+        'home';
 }
 
 /* Naviagtion */
@@ -59,8 +60,8 @@ nav ul li a:hover {
 
 /* Home Section  */
 
+
 .home {
-    max-width: 800px;
-    margin: 50px auto;
+    grid-area:home;
     text-align: center;
 }
