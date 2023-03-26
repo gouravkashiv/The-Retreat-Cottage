@@ -16,13 +16,6 @@ body {
 
 /* Body Structure  */
 
-.container {
-    display: grid;
-    grid-template-areas:
-        'navbar'
-        'home';
-}
-
 /* Naviagtion */
 
 #retreat h3{
@@ -32,6 +25,10 @@ body {
     padding-left: 15px;
     padding-top: 0px;
     font-family: 'Delicious Handrawn', cursive;
+}
+
+#retreat h3:hover{
+    color:red;
 }
 
 /* #logo
@@ -44,9 +41,7 @@ body {
     filter:invert(1)
 } */
 
-#navbar {
-    grid-area: navbar;
-}
+
 
 nav {
     background-color:black;
@@ -86,10 +81,9 @@ nav ul li a:hover {
 
 
 #home {
-    display: grid;
-    grid-area:home;
-    text-align: center;
-    align-content: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background: url('static/bg3.jpg') no-repeat center center/cover;
     height: 600px;
     z-index: -1;
@@ -101,6 +95,10 @@ nav ul li a:hover {
     font-size: 3rem;
     font-family: 'Delicious Handrawn', cursive;
     color:white;
+}
+
+.home h1:hover {
+    color:red;
 }
 
 /* #home::before{ 
