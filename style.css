@@ -86,7 +86,7 @@ nav ul li a:hover {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 540px;
     width: 100%;
 }
 
@@ -94,7 +94,7 @@ nav ul li a:hover {
     font-size: 3rem;
     font-family: 'Delicious Handrawn', cursive;
     color:yellow;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 
@@ -110,3 +110,69 @@ nav ul li a:hover {
     z-index: -1;
     opacity:0.79;
 }
+
+/* About Section  */
+ 
+.about-us {
+    background-color: #F4EBD9;
+    padding: 55px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #363636;
+    margin-top: 5px;
+  }
+  
+  .container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #5D5D5D;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #363636;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .btn:hover {
+    background-color: #5D5D5D;
+  }
+  
+  
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
