@@ -28,7 +28,7 @@ body {
 }
 
 #retreat h3:hover{
-    color:red;
+    color:yellow;
 }
 
 /* #logo
@@ -114,7 +114,7 @@ nav ul li a:hover {
 /* About Section  */
  
 .about-us {
-    background-color: #F4EBD9;
+    background-color: #f7f79e;
     padding: 55px 0;
   }
   
