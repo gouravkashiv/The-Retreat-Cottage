@@ -50,12 +50,12 @@ body {
 
 #navbar {
     grid-area: navbar;
+    position: sticky;
 }
 
 nav {
     background-color:black;
     height: 60px;
-    align-content: center;
     display: flex;
     justify-content: space-between;
 }
@@ -104,12 +104,10 @@ nav ul li a:hover {
 .home h1 {
     font-size: 3rem;
     font-family: 'Delicious Handrawn', cursive;
-    color:white;
+    color:yellow;
 }
 
-.home h1:hover {
-    color:red;
-}
+
 /* #home::before{ 
     content: "";
     position: absolute;
