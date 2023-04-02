@@ -34,6 +34,10 @@ body {
     font-family: 'Delicious Handrawn', cursive;
 }
 
+#retreat h3:hover {
+    color:red;
+}
+
 /* #logo
 {
     padding: 0px 0px;
@@ -103,6 +107,9 @@ nav ul li a:hover {
     color:white;
 }
 
+.home h1:hover {
+    color:red;
+}
 /* #home::before{ 
     content: "";
     position: absolute;
