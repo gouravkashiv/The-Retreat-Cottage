@@ -10,25 +10,25 @@ body {
 
 /* Css Variables */
 
---root{
-    --bg-color:black;
+--root {
+    --bg-color: black;
 }
 
 /* Body Structure  */
 
 /* Naviagtion */
 
-#retreat h3{
+#retreat h3 {
     text-align: center;
     display: inline-block;
-    color:#fff;
+    color: #fff;
     padding-left: 15px;
     padding-top: 0px;
     font-family: 'Delicious Handrawn', cursive;
 }
 
-#retreat h3:hover{
-    color:yellow;
+#retreat h3:hover {
+    color: yellow;
 }
 
 /* #logo
@@ -44,9 +44,9 @@ body {
 
 
 nav {
-    background-color:black;
+    background-color: black;
     height: 60px;
-    top:0px;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 
 #home {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 540px;
@@ -93,52 +93,53 @@ nav ul li a:hover {
 .home h1 {
     font-size: 3rem;
     font-family: 'Delicious Handrawn', cursive;
-    color:yellow;
+    color: yellow;
     padding-bottom: 10px;
 }
 
 
 
-#home::before{ 
+#home::before {
     content: "";
     position: absolute;
     background: url('static/bg3.jpg') no-repeat center center/cover;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 600px;
     width: 100%;
     z-index: -1;
-    opacity:0.79;
+    opacity: 0.79;
 }
 
 /* About Section  */
- 
+
 .about-us {
     background-color: #f7f79e;
     padding: 55px 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .container h2 {
+}
+
+.container h2 {
     font-family: 'Delicious Handrawn', cursive;
     font-size: 36px;
     margin-bottom: 35px;
     color: #363636;
     margin-top: 5px;
-  }
-  
-  .container p {
+}
+
+.container p {
     font-size: 18px;
     margin-bottom: 30px;
     color: #5D5D5D;
     font-family: 'Merienda', cursive;
-  }
-  
+}
+
+/*   
   .btn {
     display: inline-block;
     background-color: #363636;
@@ -154,9 +155,58 @@ nav ul li a:hover {
     background-color: #5D5D5D;
   }
   
-  
+   */
 
 
+/* Rooms  */
+
+.carousel-container {
+    position: relative;
+    margin: 20px;
+    height: 300px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    width: 500%;
+    transform: translateX(-20%);
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 20%;
+    height: 100%;
+}
+
+#rooms img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#rooms button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 
 
 /* Footer */
@@ -165,14 +215,14 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-  }
-  
-  .footer {
+}
+
+.footer {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .footer p {
+}
+
+.footer p {
     margin: 0;
-  }
+}
