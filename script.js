@@ -1,47 +1,36 @@
-// // Get the button element
-// const learnMoreBtn = document.querySelector('.btn');
+// const carousel = document.querySelector('.carousel');
+// const carouselSlides = Array.from(carousel.children);
+// const prevButton = document.querySelector('.prev');
+// const nextButton = document.querySelector('.next');
+// const totalSlides = carouselSlides.length;
+// let currentSlide = 0;
 
-// // Add a click event listener to the button
-// learnMoreBtn.addEventListener('click', function() {
-//   // Redirect the user to the Learn More page
-//   window.location.href = 'https://retreatcottage.in/learn-more.html';
-// });
+// function setSlidePosition(slide, index) {
+//   slide.style.transform = `translateX(${100 * index}%)`;
+// }
 
-const carousel = document.querySelector('.carousel');
-const slides = Array.from(carousel.children);
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+// carouselSlides.forEach(setSlidePosition);
 
-let slideWidth = slides[0].getBoundingClientRect().width;
-let currentIndex = 0;
+// function moveToSlide(slideNumber) {
+//   carousel.style.transform = `translateX(-${100 * slideNumber}%)`;
+//   currentSlide = slideNumber;
+// }
 
-// Arrange slides next to one another
-function setSlidePosition(slide, index) {
-    slide.style.left = slideWidth * index + 'px';
-}
+// function moveToNextSlide() {
+//   if (currentSlide === totalSlides - 1) {
+//     moveToSlide(0);
+//   } else {
+//     moveToSlide(currentSlide + 1);
+//   }
+// }
 
-slides.forEach(setSlidePosition);
+// function moveToPrevSlide() {
+//   if (currentSlide === 0) {
+//     moveToSlide(totalSlides - 1);
+//   } else {
+//     moveToSlide(currentSlide - 1);
+//   }
+// }
 
-// Move carousel to the next slide
-function moveToNextSlide() {
-    if (currentIndex === slides.length - 1) {
-        currentIndex = 0;
-    } else {
-        currentIndex++;
-    }
-    carousel.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
-}
-
-// Move carousel to the previous slide
-function moveToPrevSlide() {
-    if (currentIndex === 0) {
-        currentIndex = slides.length - 1;
-    } else {
-        currentIndex--;
-    }
-    carousel.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
-}
-
-// Add event listeners to buttons
-prevButton.addEventListener('click', moveToPrevSlide);
-nextButton.addEventListener('click', moveToNextSlide);
+// prevButton.addEventListener('click', moveToPrevSlide);
+// nextButton.addEventListener('click', moveToNextSlide);
