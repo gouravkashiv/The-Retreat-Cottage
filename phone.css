@@ -8,11 +8,28 @@ nav ul li {
     margin: 0px;
 
 }
-
+nav ul 
+{
+    height:23px;
+}
 #retreat {
     font-size: 15px;
+    height:30px
 }
 
 nav ul li a {
     font-size: 13px;
+}
+
+#home
+{
+    height:500px;
+}
+
+.container p{
+    margin:25px;
+}
+
+.slideshow-container img{
+    height:300px;
 }
